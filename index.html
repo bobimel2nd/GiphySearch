@@ -26,7 +26,7 @@
       border: 1px solid black;
     }
     .smallPic {
-      width: 85%;
+      width: 100%;
     }
     .bolded {
       color: red;
@@ -38,18 +38,26 @@
 <body>
   <div class="container">
     <div class="row">
-      <h2><input type="text" id="giphy" placeholder="Button to Add">
-          <button id="Search">Add</button></h2>
+      <div class="col-xs-12">
+        <h2>
+          <input type="text" id="giphy" placeholder="Button to Add">
+          <button id="Search">Add</button>
+        </h2>
+      </div>
     </div>
     <br>
-    <div class="row" id="giphyButtons">
-      <button class="searches" data-search="dog">Dog</button>
-      <button class="searches" data-search="cat">Cat</button>
-      <button class="searches" data-search="bird">Bird</button>
+    <div class="row">
+      <div id="giphyButtons" class="col-xs-12">
+        <button class="searches" data-search="dog">Dog</button>
+        <button class="searches" data-search="cat">Cat</button>
+        <button class="searches" data-search="bird">Bird</button>
+      </div>
     </div>
     <div class="row">
-      <div>
-        <h2><button id="more">More</button></h2>
+      <div class="col-xs-12">
+        <h2>
+          <button id="more">More</button>
+        </h2>
       </div>
     </div>
     <br>
